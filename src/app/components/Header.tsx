@@ -23,13 +23,13 @@ export default function Header() {
 
                         {/* Navigation Menu */}
                         <div>
-                            <ul className="w-[361px] h-[25px] flex mt-5 gap-5 font-medium">
+                            <ul className="hidden md:flex w-[361px] h-[25px] mt-5 gap-5 font-medium">
                                 <li><Link href={'/'}>Home</Link></li>
-                                <li><Link href={'/'}>Shop</Link></li>
-                                <li><Link href={'/'}>About</Link></li>
-                                <li><Link href={'/'}>Blog</Link></li>
-                                <li><Link href={'/'}>Contact</Link></li>
-                                <li><Link href={'/'}>Pages</Link></li>
+                                <li><Link href={'/shop'}>Shop</Link></li>
+                                <li><Link href={'/about'}>About</Link></li>
+                                <li><Link href={'/blog'}>Blog</Link></li>
+                                <li><Link href={'/contact'}>Contact</Link></li>
+                                <li><Link href={'/pages'}>Pages</Link></li>
                                
                             </ul>
                         </div>
