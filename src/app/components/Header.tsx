@@ -42,7 +42,7 @@ export default function Header() {
                                     <div className='w-[12px] h-[12px] flex mt-1'>
 
                                     <Image
-                                        src={'/Vector/Login.png' }
+                                        src={'/Vector/Login.png'}
                                         alt='Login icon'
                                         width={12}
                                         height={12}                                        
