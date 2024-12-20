@@ -663,12 +663,12 @@ export default function Cards() {
                                 <h4 className='font-bold text-black'>Get In Touch</h4>
 
                                 <div className='w-[321px] h-[58px] flex'>
-                                    <input type="text" placeholder='Enter Your Email' className='w-[321px] h-[58px] mt-3 border border-[#23A6F0]' />
+                                    <input type="text" placeholder='Enter Your Email' className='w-[321px] h-[58px] mt-3 text-black border border-[#23A6F0]' />
                                     <button type='button' className='text-white bg-[#23A6F0] rounded-sm w-[117px] h-[58px] mt-3'>Subscribe</button>
                                 </div>
                                 <p className='text-[#737373] w-[175px] h-[28px] mt-5'>Lore imp sum dolor Amit</p>
 
-
+CK
                             </div>
                             
 

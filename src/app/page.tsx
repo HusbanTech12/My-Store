@@ -1,21 +1,22 @@
+import Navbar from './components/Navbar';
 
 import Header from "./components/Header";
 import Cards from "./components/Cards";
+import Shop from "./Shop/page";
 export default function Home() {
   return (
 
-    <>
-      <div className="w-[1440px] h-[6197px] ">
+    
+      
+      <>
+      
+          
+        <Navbar />
         <Header />
         <Cards />
+        <Shop />
 
-
-
-      </div>
-
-
-    
-    </>
+      </>
 
 
 
