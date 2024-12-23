@@ -27,7 +27,7 @@ const Navbar = () => {
         <ul className="hidden md:flex w-[361px] h-[25px] mt-5 gap-5 font-medium">
             <li><Link href={'/'}>Home</Link></li>
             <li><Link href={'/Shop'}>Shop</Link></li>
-            <li><Link href={'/about'}>About</Link></li>
+            <li><Link href={'/About'}>About</Link></li>
             <li><Link href={'/blog'}>Blog</Link></li>
             <li><Link href={'/contact'}>Contact</Link></li>
             <li><Link href={'/pages'}>Pages</Link></li>
