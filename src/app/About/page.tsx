@@ -126,7 +126,7 @@ const About = () => {
                                 alt="Loading"
                                 width={92.6}
                                 height={96.6}
-                                
+                                className="ml-[450px] pt-[220px]"
                                 
                                 
                             />
@@ -138,8 +138,52 @@ const About = () => {
 
                 </div>
 
+                
+                {/* Our Team */}
 
+                <div className="w-[1440px] h-[826px]">
 
+                    {/* Container */}
+                    <div className="w-[1050px] h-[819px] ml-[195px] ">
+
+                        {/* Row */}
+                        <div className="w-[607px] h-[100px] ml-64 bg-green-200">
+
+                            <h2 className="w-[316px] h-[50px] font-bold text-[40px] text-[#252B42] ml-20 ">Meet Our Team</h2>
+                            <p className="w-[469px] h-[40px] font-medium text-sm text-[#737373] text-center mt-3 "> Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+
+                        </div>
+
+                        {/* Row-1 */}
+                        <div className="w-[1034px] h-[383px] ">
+
+                            {/* Card-1 */}
+                            <div className="w-[316px] h-[383px]">
+                                <Image
+                                
+                                src={'/Vector/team-user1.jpg'}
+                                alt=""
+                                width={316}
+                                height={231}
+                                    
+                                />
+
+                                {/* Card-Content */}
+                                <div className="w-[316px] h-[152px] p-20">
+                                    <h5 className="w-[83px] h-6 text-[#252B42] text-base font-bold" >UserName</h5>
+                                    <h6 className="w-[77px] h-6 text-[#737373] font-bold">Profession</h6>
+
+                                </div> 
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+              
+                {/*  */}
 
 
             </div>

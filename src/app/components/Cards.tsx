@@ -668,7 +668,7 @@ export default function Cards() {
                                 </div>
                                 <p className='text-[#737373] w-[175px] h-[28px] mt-5'>Lore imp sum dolor Amit</p>
 
-CK
+
                             </div>
                             
 
