@@ -1,7 +1,8 @@
 
+
 import Link from 'next/link';
 
-const Navbar1 = () => {
+const Navbar2 = () => {
 
     return (
         
@@ -10,7 +11,7 @@ const Navbar1 = () => {
         <div className="w-[1322px] h-[91px]">
 
 
-      <nav className="w-[1439px] h-[58px] bg-[#FFFFFF] text-black flex">
+      <nav className="w-[1050px] h-[91px] bg-[#FFFFFF] text-black flex ">
 
 {/* Brand Name */}
 <div className="w-[187px] h-[58px] ml-20 mt-3">
@@ -20,16 +21,17 @@ const Navbar1 = () => {
 
     {/* Collapse Navbar  */}
 
-<div className="w-[1155px] h-[58px] flex mx-36">
+<div className="w-[1155px] h-[58px] flex ml-20">
 
     {/* Navigation Menu */}
     <div>
         <ul className="hidden md:flex w-[361px] h-[25px] mt-5 gap-5 font-bold ">
             <li><Link href={'/'}>Home</Link></li>
             <li><Link href={'/Shop'}>Shop</Link></li>
-            <li><Link href={'/Pricing'}>Pricing</Link></li>
             <li><Link href={'/About'}>About</Link></li>
-            <li><Link href={'/contact'}>Contact Us</Link></li>
+            <li><Link href={'/Pricing'}>Pricing</Link></li>
+            <li><Link href={'/contact'}>Contact</Link></li>
+            <li><Link href={'/all product'}>All</Link></li>
            
         </ul>
     </div>
@@ -40,7 +42,7 @@ const Navbar1 = () => {
 
          {/* Buttons */}
                 
-                <div className='w-[300px] h-[52px] flex gap-10 mx-[350px] justify-center items-center mt-2'>
+                <div className='w-[300px] h-[52px] flex gap-10  justify-center items-center mt-2 ml-16'>
                     <button type='button' className='w-[41px] h-[22px] text-[#23A6F0] font-bold'>Login</button>
                     <button type='button' className='w-[214px] h-[52px] bg-[#23A6F0] text-white rounded font-bold'>Become a member</button>
                     
@@ -60,4 +62,4 @@ const Navbar1 = () => {
 }
 
 
-export default Navbar1 
+export default Navbar2 

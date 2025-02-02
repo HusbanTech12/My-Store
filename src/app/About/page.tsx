@@ -1,5 +1,7 @@
+import ClientImage from "../components/ClientImage";
 import Navbar1 from "../components/Navbar1";
 import Image from "next/image";
+import Footer from "../components/Footer";
 const About = () => {
 
     return (
@@ -147,15 +149,15 @@ const About = () => {
                     <div className="w-[1050px] h-[819px] ml-[195px] ">
 
                         {/* Row */}
-                        <div className="w-[607px] h-[100px] ml-64 bg-green-200">
+                        <div className="w-[607px] h-[100px] ml-64">
 
                             <h2 className="w-[316px] h-[50px] font-bold text-[40px] text-[#252B42] ml-20 ">Meet Our Team</h2>
                             <p className="w-[469px] h-[40px] font-medium text-sm text-[#737373] text-center mt-3 "> Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
 
                         </div>
 
-                        {/* Row-1 */}
-                        <div className="w-[1034px] h-[383px] ">
+                        {/* Row-2 */}
+                        <div className="w-[1034px] h-[383px] mt-36 flex gap-5">
 
                             {/* Card-1 */}
                             <div className="w-[316px] h-[383px]">
@@ -169,11 +171,151 @@ const About = () => {
                                 />
 
                                 {/* Card-Content */}
-                                <div className="w-[316px] h-[152px] p-20">
-                                    <h5 className="w-[83px] h-6 text-[#252B42] text-base font-bold" >UserName</h5>
-                                    <h6 className="w-[77px] h-6 text-[#737373] font-bold">Profession</h6>
+                                <div className="w-[316px] h-[152px] ml-24 mt-8">
+                                    <h5 className="w-[83px] h-6 text-[#252B42] text-base font-bold mb-4 ml-7" >UserName</h5>
+                                    <h6 className="w-[77px] h-6 text-[#737373] font-bold mb-4 ml-7">Profession</h6>
 
-                                </div> 
+
+                                {/* Social Icons */}
+                                   
+                                    <div className="w-[112px] h-6 flex gap-8 ">
+                                        
+                                     {/* Facebook-Icon */}
+                                    <Image
+                                        src={ '/Vector/Facebook-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                       {/* Instagram-Icon */}
+                                      <Image
+                                        src={ '/Vector/Instagram-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                         {/* Twitter-Icon */}
+                                        <Image
+                                        src={ '/Vector/Twitter-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                </div>
+
+                             </div>   
+                            </div>
+
+                           {/* Card-2 */}
+                           <div className="w-[316px] h-[383px]">
+                                <Image
+                                
+                                src={'/Vector/team-user2.png'}
+                                alt=""
+                                width={316}
+                                height={231}
+                                    
+                                />
+
+                                {/* Card-Content */}
+                                <div className="w-[316px] h-[152px] ml-24 mt-8">
+                                    <h5 className="w-[83px] h-6 text-[#252B42] text-base font-bold mb-4 ml-7" >UserName</h5>
+                                    <h6 className="w-[77px] h-6 text-[#737373] font-bold mb-4 ml-7">Profession</h6>
+
+
+                                {/* Social Icons */}
+                                   
+                                    <div className="w-[112px] h-6 flex gap-8 ">
+                                        
+                                     {/* Facebook-Icon */}
+                                    <Image
+                                        src={ '/Vector/Facebook-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                       {/* Instagram-Icon */}
+                                      <Image
+                                        src={ '/Vector/Instagram-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                         {/* Twitter-Icon */}
+                                        <Image
+                                        src={ '/Vector/Twitter-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                </div>
+
+                             </div>   
+                            </div>
+
+                            {/* Card-3 */}
+                            <div className="w-[316px] h-[383px]">
+                                <Image
+                                
+                                src={'/Vector/team-user3.png'}
+                                alt=""
+                                width={316}
+                                height={231}
+                                    
+                                />
+
+                                {/* Card-Content */}
+                                <div className="w-[316px] h-[152px] ml-24 mt-8">
+                                    <h5 className="w-[83px] h-6 text-[#252B42] text-base font-bold mb-4 ml-7" >UserName</h5>
+                                    <h6 className="w-[77px] h-6 text-[#737373] font-bold mb-4 ml-7">Profession</h6>
+
+
+                                {/* Social Icons */}
+                                   
+                                    <div className="w-[112px] h-6 flex gap-8 ">
+                                        
+                                     {/* Facebook-Icon */}
+                                    <Image
+                                        src={ '/Vector/Facebook-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                       {/* Instagram-Icon */}
+                                      <Image
+                                        src={ '/Vector/Instagram-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                         {/* Twitter-Icon */}
+                                        <Image
+                                        src={ '/Vector/Twitter-Icon.png'}
+                                        alt="Loading"
+                                        width={24}
+                                        height={24}
+                                        
+                                        />
+
+                                </div>
+
+                             </div>   
                             </div>
 
                         </div>
@@ -183,9 +325,73 @@ const About = () => {
                 </div>
 
               
-                {/*  */}
+                {/* Client */}
+
+                <div className="w-[1440px] h-[479px] ml-40">
+
+                    {/* Container */}
+
+                    <div className="w-[1050px] h-[479px] bg-[#FAFAFA] ">
+
+                        {/* Row */}
+
+                        <div className="w-[864px] h-[120px]">
+
+                            {/* Main Content */}
+
+                            <div className="w-[864px] h-[120px] gap-8 text-center ml-[110px] pt-10">
+
+                                <h1 className="text-[#252B42] font-bold text-xl">Big Companies Are Here</h1>
+                                 <p className="w-[547px] h-[40px] text-[#737373] text-sm ml-[155px] pt-5">Problems trying to resolve the conflict between <br />
+                                 the two major realms of Classical physics: Newtonian mechanics </p>
+
+                            </div>
+
+                        </div>
+
+                        {/* Row-2 */}
+                        <div className="w-[1054px] h-[175px] pt-5">
+
+                       <ClientImage />
+                        </div>
 
 
+                    </div>
+
+                </div>
+
+                
+                {/* Work With Us */}
+                
+                <div className="w-[1440px] h-[636px]  ">
+                    <div className="w-[1050px] h-[636px] bg-[#2A7CC7] ml-40 flex gap-10">
+
+
+                    <div className="w-[438px] h-[238px] gap-6 pt-[250px] ">
+                    
+                        <h5 className="w-[128px] h-6 font-bold text-[#FFFFFF] ml-8">WORK WITH US</h5>
+                            <h2 className="w-[440px] h-[50px] font-bold text-[#FFFFFF] text-[40px] pt-5 ml-8">Now Lets grow Yours</h2>
+                            <p className="w-[440px] h-[40px] font-meduim pt-10 ml-8 ">The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th </p>
+
+                    </div>
+
+                        <Image
+                        
+                            src={'/Vector/Shop-cover8.png'}
+                            alt="Loding"
+                            width={ 590}
+                            height={640}
+                        
+                        />
+                     
+                    </div>
+                </div>
+              
+                {/* Footer */}
+                <div className="ml-10">
+               <Footer />
+
+                </div>
             </div>
 
         </>

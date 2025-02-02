@@ -5,12 +5,10 @@ const Navbar = () => {
 
     return (
         
-    
-        
-        <div className="w-[1440px] h-[60px] ">
+        <div className="w-[414px] h-[532px]   sm:w-[1440px] sm:h-[60px] lg:w-[1440px] lg:h-[60px]">
 
 
-      <nav className="w-[1439px] h-[58px] bg-[#252B42] flex">
+      <nav className="w-[414px] h-[532px] md:w-[1439px] :h-[58px] bg-[#252B42] flex">
 
 {/* Brand Name */}
 <div className="w-[187px] h-[58px] ml-20 mt-3">
@@ -24,13 +22,13 @@ const Navbar = () => {
 
     {/* Navigation Menu */}
     <div>
-        <ul className="hidden md:flex w-[361px] h-[25px] mt-5 gap-5 font-medium">
+        <ul className="hidden md:flex w-[410px] h-[25px] mt-5 gap-5 font-medium">
             <li><Link href={'/'}>Home</Link></li>
             <li><Link href={'/Shop'}>Shop</Link></li>
             <li><Link href={'/About'}>About</Link></li>
-            <li><Link href={'/blog'}>Blog</Link></li>
-            <li><Link href={'/contact'}>Contact</Link></li>
-            <li><Link href={'/pages'}>Pages</Link></li>
+            <li><Link href={'/AllProduct'}>All Product</Link></li>
+            <li><Link href={'/Pricing'}>Pricing</Link></li>
+            <li><Link href={'/Contact'}>Contact</Link></li>
            
         </ul>
     </div>
@@ -120,27 +118,10 @@ const Navbar = () => {
     </div>    
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-
-        
     )
 }
 
 
 export default Navbar 
+    
+        
