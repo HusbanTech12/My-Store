@@ -1,9 +1,36 @@
-import type { NextConfig } from "next";
+
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["cdn.sanity.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+    ],
   },
 };
 
-module.exports = nextConfig;  // ✅ Static Export Mode hata diya
+export default nextConfig;
+
+//  Agar multiple image sources allow karne hain
+
+// import { NextConfig } from "next";
+
+// const nextConfig: NextConfig = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: "https",
+//         hostname: "cdn.sanity.io",
+//       },
+//       {
+//         protocol: "https",
+//         hostname: "images.unsplash.com",
+//       },
+//     ],
+//   },
+// };
+
+// export default nextConfig;

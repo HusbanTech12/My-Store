@@ -52,6 +52,16 @@ export const product = defineType({
             type:"number",
             title:"Discount Percentage",
         },
+
+        {
+            name: "inventry",
+            title: "Inventry",
+            type: "number",
+            description: "Available stock count",
+            validation: (Rule) => Rule.min(0),
+            
+
+        },
         {
             name:"isNew",
             type:"boolean",

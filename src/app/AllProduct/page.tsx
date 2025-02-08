@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react';
 import { client } from '@/sanity/lib/client';
 import Link from 'next/link';
-import { Product } from '../../../types/product';
+import { Product } from '../../types/product';
 import Image from 'next/image';
+import { addToCart } from '../actions/action';
+import Swal from 'sweetalert2';
 
 
 const fetchProducts = async (): Promise<Product[]> => {
@@ -22,6 +24,29 @@ const fetchProducts = async (): Promise<Product[]> => {
   
 
 };
+
+
+const handleAddToCart = (e: React.MouseEvent, product: Product) => {
+    
+  e.preventDefault()
+  Swal.fire({
+    title: `${product.title} Added To Cart`,
+    position: 'top-left',
+    icon: 'success',
+    timer: 2000,
+    showConfirmButton : false
+    
+
+  })
+  addToCart(product)
+  
+ 
+  // alert('working')
+
+  console.log(handleAddToCart);
+
+}
+
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -59,6 +84,7 @@ export default function ProductsPage() {
           <div key={product._id} className="border rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-200" >
             
           
+            <Link href={`/Product/${product.slug.current}`}>
               
             <Image
               src={product.imageUrl}
@@ -73,11 +99,10 @@ export default function ProductsPage() {
             <p className="text-lg font-bold text-gray-700">Price: ${product.price}</p>
             <p className="text-lg font-bold text-gray-700">Discount:{product.dicountPercentage}</p>
              
-            <Link href={`/Product/${product.slug.current}`}>
-            <div>
+             {/* <div>
               <button className='w-32 h-14 bg-blue-400  font-bold border rounded-lg mt-2'>View Details</button>
-            </div>
-            
+            </div> */}
+               <button type="button" onClick={(e) => handleAddToCart(e ,product)} className="w-32 h-14 bg-gradient-to-r from-slate-600 to-emerald-500 text-white mt-3 font-bold rounded-md shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">Add Cart</button>    
              </Link>
           </div>
         ))}

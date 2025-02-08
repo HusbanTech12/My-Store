@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+
 
 export interface Product {
     _id: string;
@@ -13,4 +13,6 @@ export interface Product {
         _type: "slug";
         current: string;
     }
+
+    inventry: number;
 }

@@ -2,8 +2,6 @@
   "name": "my-store",
   "version": "0.1.0",
   "private": true,
-  
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,7 +17,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sanity": "^3.70.0",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "sweetalert2": "^11.15.10"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
