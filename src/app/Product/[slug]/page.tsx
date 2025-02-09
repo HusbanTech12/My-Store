@@ -11,14 +11,7 @@ interface PropsType{
 }
 
 
-// const handleAddToCart = (e: React.MouseEvent, product: Product) => {
-    
-//     e.preventDefault()
-//     addToCart(product)
 
-//     alert('working')
-    
-// }
 const getProduct =  async (slug: string): Promise<Product> => {
    
     return client.fetch(
@@ -41,9 +34,10 @@ const getProduct =  async (slug: string): Promise<Product> => {
         )}
 
 const ProductPage = async ({ params }: PropsType) => {
-    const { slug } = await params
+    const { slug } = await params   
     const product = await getProduct(slug)
-    console.log(product);
+    // console.log(product);
+    console.trace("Debug Trace");
          
     return (
        <>
@@ -68,9 +62,6 @@ const ProductPage = async ({ params }: PropsType) => {
                         <h1 className="text-4xl text-black font-bold mb-5"> {product.title}</h1>
                         <p className="w-[800px] h-[370px] text-black font-bold">{product.description }</p>
                        
-                        {/* <div>
-                            <button type="button" onClick={(e) => handleAddToCart(e ,product)} className="w-32 h-14 bg-gradient-to-r from-slate-600 to-emerald-500 text-white font-bold rounded-md shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">Add Cart</button>
-                        </div> */}
                                       
                     </div>
                     
@@ -83,4 +74,22 @@ const ProductPage = async ({ params }: PropsType) => {
 
  }
 
- export default ProductPage;
+export default ProductPage;
+ 
+
+
+// const handleAddToCart = (e: React.MouseEvent, product: Product) => {
+    
+//     e.preventDefault()
+//     addToCart(product)
+
+//     alert('working')
+    
+// }
+
+
+
+                    {/* <div>
+                            <button type="button" onClick={(e) => handleAddToCart(e ,product)} className="w-32 h-14 bg-gradient-to-r from-slate-600 to-emerald-500 text-white font-bold rounded-md shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out">Add Cart</button>
+                        </div> */}
+    

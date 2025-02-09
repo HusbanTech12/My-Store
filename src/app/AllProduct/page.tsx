@@ -19,7 +19,6 @@ const fetchProducts = async (): Promise<Product[]> => {
     slug
   }`;
   const products: Product[] = await client.fetch(query);
-  // console.log(products);
   return products;
   
 
