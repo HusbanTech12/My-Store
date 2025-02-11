@@ -7,7 +7,7 @@ import Image from "next/image";
 // import { addToCart } from "@/app/actions/action";
 
 interface PropsType{
-    params : Promise <{slug : string}>
+    params : {slug : string}
 }
 
 
