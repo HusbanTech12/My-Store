@@ -6,9 +6,7 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 // import { addToCart } from "@/app/actions/action";
 
-interface PropsType{
-    params : {slug : string}
-}
+
 
 
 
@@ -33,11 +31,11 @@ const getProduct =  async (slug: string): Promise<Product> => {
             
         )}
 
-const ProductPage = async ({ params }: PropsType) => {
+const ProductPage = async ({ params }: { params : Promise<{slug : string}>}) => {
     const { slug } = await params   
     const product = await getProduct(slug)
     // console.log(product);
-    console.trace("Debug Trace");
+    // console.trace("Debug Trace");
          
     return (
        <>
